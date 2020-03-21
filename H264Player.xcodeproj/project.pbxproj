@@ -102,8 +102,7 @@
 			children = (
 				77B177282426083000D06DA6 /* Tools */,
 				77B177222425C96100D06DA6 /* Others */,
-				77B177072425A79500D06DA6 /* Encode */,
-				77B177062425A78E00D06DA6 /* Decode */,
+				77B177072425A79500D06DA6 /* Codec */,
 				77B176FB2425A46300D06DA6 /* ViewControls */,
 				77B176DC2425A11800D06DA6 /* AppDelegate.h */,
 				77B176DD2425A11800D06DA6 /* AppDelegate.m */,
@@ -127,24 +126,17 @@
 			path = ViewControls;
 			sourceTree = "<group>";
 		};
-		77B177062425A78E00D06DA6 /* Decode */ = {
+		77B177072425A79500D06DA6 /* Codec */ = {
 			isa = PBXGroup;
 			children = (
 				77B177082425A82A00D06DA6 /* G711.h */,
 				77B177092425A82A00D06DA6 /* G711.m */,
 				77B177172425AEBE00D06DA6 /* H264Decode.h */,
 				77B177182425AEBE00D06DA6 /* H264Decode.m */,
-			);
-			path = Decode;
-			sourceTree = "<group>";
-		};
-		77B177072425A79500D06DA6 /* Encode */ = {
-			isa = PBXGroup;
-			children = (
 				77B1771A2425B02000D06DA6 /* H264HwEncode.h */,
 				77B1771B2425B02000D06DA6 /* H264HwEncode.m */,
 			);
-			path = Encode;
+			path = Codec;
 			sourceTree = "<group>";
 		};
 		77B177222425C96100D06DA6 /* Others */ = {
