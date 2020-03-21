@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5AA57846AE43D298950C3B3F /* libPods-H264Player.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7941874B87E01A3E9E86E066 /* libPods-H264Player.a */; };
+		77B176DE2425A11800D06DA6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B176DD2425A11800D06DA6 /* AppDelegate.m */; };
+		77B176E42425A11800D06DA6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B176E32425A11800D06DA6 /* ViewController.m */; };
+		77B176E72425A11800D06DA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77B176E52425A11800D06DA6 /* Main.storyboard */; };
+		77B176E92425A12100D06DA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77B176E82425A12100D06DA6 /* Assets.xcassets */; };
+		77B176EC2425A12100D06DA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77B176EA2425A12100D06DA6 /* LaunchScreen.storyboard */; };
+		77B176EF2425A12100D06DA6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B176EE2425A12100D06DA6 /* main.m */; };
+		77B176FE2425A4CE00D06DA6 /* LivePlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B176FD2425A4CE00D06DA6 /* LivePlayerController.m */; };
+		77B177052425A66600D06DA6 /* NSString+JsonString.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B177042425A66600D06DA6 /* NSString+JsonString.m */; };
+		77B1770A2425A82A00D06DA6 /* G711.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B177092425A82A00D06DA6 /* G711.m */; };
+		77B1770D2425A90A00D06DA6 /* VideoFileParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B1770C2425A90A00D06DA6 /* VideoFileParser.m */; };
+		77B177102425AA2D00D06DA6 /* PCMDataPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B1770F2425AA2D00D06DA6 /* PCMDataPlayer.m */; };
+		77B177132425AB3900D06DA6 /* PCMAudioQueuePlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B177122425AB3900D06DA6 /* PCMAudioQueuePlay.m */; };
+		77B177162425AC2F00D06DA6 /* AAPLEAGLLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B177152425AC2F00D06DA6 /* AAPLEAGLLayer.m */; };
+		77B177192425AEBE00D06DA6 /* H264Decode.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B177182425AEBE00D06DA6 /* H264Decode.m */; };
+		77B1771C2425B02000D06DA6 /* H264HwEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B1771B2425B02000D06DA6 /* H264HwEncode.m */; };
+		77B1771F2425B2C700D06DA6 /* Packed.c in Sources */ = {isa = PBXBuildFile; fileRef = 77B1771E2425B2C700D06DA6 /* Packed.c */; };
+		77B177252425C98400D06DA6 /* 直播协议说明.txt in Resources */ = {isa = PBXBuildFile; fileRef = 77B177232425C98300D06DA6 /* 直播协议说明.txt */; };
+		77B177262425C98400D06DA6 /* 协议解析.txt in Resources */ = {isa = PBXBuildFile; fileRef = 77B177242425C98400D06DA6 /* 协议解析.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		77B176D92425A11800D06DA6 /* H264Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = H264Player.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		77B176DC2425A11800D06DA6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		77B176DD2425A11800D06DA6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		77B176E22425A11800D06DA6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		77B176E32425A11800D06DA6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		77B176E62425A11800D06DA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		77B176E82425A12100D06DA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		77B176EB2425A12100D06DA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		77B176ED2425A12100D06DA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77B176EE2425A12100D06DA6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		77B176FC2425A4CE00D06DA6 /* LivePlayerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LivePlayerController.h; sourceTree = "<group>"; };
+		77B176FD2425A4CE00D06DA6 /* LivePlayerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LivePlayerController.m; sourceTree = "<group>"; };
+		77B177032425A66600D06DA6 /* NSString+JsonString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+JsonString.h"; sourceTree = "<group>"; };
+		77B177042425A66600D06DA6 /* NSString+JsonString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+JsonString.m"; sourceTree = "<group>"; };
+		77B177082425A82A00D06DA6 /* G711.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = G711.h; sourceTree = "<group>"; };
+		77B177092425A82A00D06DA6 /* G711.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = G711.m; sourceTree = "<group>"; };
+		77B1770B2425A90A00D06DA6 /* VideoFileParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoFileParser.h; sourceTree = "<group>"; };
+		77B1770C2425A90A00D06DA6 /* VideoFileParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoFileParser.m; sourceTree = "<group>"; };
+		77B1770E2425AA2D00D06DA6 /* PCMDataPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCMDataPlayer.h; sourceTree = "<group>"; };
+		77B1770F2425AA2D00D06DA6 /* PCMDataPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCMDataPlayer.m; sourceTree = "<group>"; };
+		77B177112425AB3900D06DA6 /* PCMAudioQueuePlay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCMAudioQueuePlay.h; sourceTree = "<group>"; };
+		77B177122425AB3900D06DA6 /* PCMAudioQueuePlay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCMAudioQueuePlay.m; sourceTree = "<group>"; };
+		77B177142425AC2F00D06DA6 /* AAPLEAGLLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AAPLEAGLLayer.h; sourceTree = "<group>"; };
+		77B177152425AC2F00D06DA6 /* AAPLEAGLLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AAPLEAGLLayer.m; sourceTree = "<group>"; };
+		77B177172425AEBE00D06DA6 /* H264Decode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = H264Decode.h; sourceTree = "<group>"; };
+		77B177182425AEBE00D06DA6 /* H264Decode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = H264Decode.m; sourceTree = "<group>"; };
+		77B1771A2425B02000D06DA6 /* H264HwEncode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = H264HwEncode.h; sourceTree = "<group>"; };
+		77B1771B2425B02000D06DA6 /* H264HwEncode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = H264HwEncode.m; sourceTree = "<group>"; };
+		77B1771D2425B2C700D06DA6 /* Packed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Packed.h; sourceTree = "<group>"; };
+		77B1771E2425B2C700D06DA6 /* Packed.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Packed.c; sourceTree = "<group>"; };
+		77B177212425C8B000D06DA6 /* ConfigMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigMacros.h; sourceTree = "<group>"; };
+		77B177232425C98300D06DA6 /* 直播协议说明.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "直播协议说明.txt"; sourceTree = "<group>"; };
+		77B177242425C98400D06DA6 /* 协议解析.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "协议解析.txt"; sourceTree = "<group>"; };
+		7941874B87E01A3E9E86E066 /* libPods-H264Player.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-H264Player.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE331EC621504B8417E814F7 /* Pods-H264Player.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-H264Player.debug.xcconfig"; path = "Pods/Target Support Files/Pods-H264Player/Pods-H264Player.debug.xcconfig"; sourceTree = "<group>"; };
+		F237D453ACE3D4399BCBE007 /* Pods-H264Player.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-H264Player.release.xcconfig"; path = "Pods/Target Support Files/Pods-H264Player/Pods-H264Player.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77B176D62425A11800D06DA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AA57846AE43D298950C3B3F /* libPods-H264Player.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		77B176D02425A11700D06DA6 = {
+			isa = PBXGroup;
+			children = (
+				77B176DB2425A11800D06DA6 /* H264Player */,
+				77B176DA2425A11800D06DA6 /* Products */,
+				8672F6D97E53EB3E4EAE43C5 /* Pods */,
+				AD80272A3FC5F737E6CACD32 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		77B176DA2425A11800D06DA6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77B176D92425A11800D06DA6 /* H264Player.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		77B176DB2425A11800D06DA6 /* H264Player */ = {
+			isa = PBXGroup;
+			children = (
+				77B177282426083000D06DA6 /* Tools */,
+				77B177222425C96100D06DA6 /* Others */,
+				77B177072425A79500D06DA6 /* Encode */,
+				77B177062425A78E00D06DA6 /* Decode */,
+				77B176FB2425A46300D06DA6 /* ViewControls */,
+				77B176DC2425A11800D06DA6 /* AppDelegate.h */,
+				77B176DD2425A11800D06DA6 /* AppDelegate.m */,
+				77B176E82425A12100D06DA6 /* Assets.xcassets */,
+				77B176EA2425A12100D06DA6 /* LaunchScreen.storyboard */,
+				77B176ED2425A12100D06DA6 /* Info.plist */,
+				77B176EE2425A12100D06DA6 /* main.m */,
+			);
+			path = H264Player;
+			sourceTree = "<group>";
+		};
+		77B176FB2425A46300D06DA6 /* ViewControls */ = {
+			isa = PBXGroup;
+			children = (
+				77B176E22425A11800D06DA6 /* ViewController.h */,
+				77B176E32425A11800D06DA6 /* ViewController.m */,
+				77B176E52425A11800D06DA6 /* Main.storyboard */,
+				77B176FC2425A4CE00D06DA6 /* LivePlayerController.h */,
+				77B176FD2425A4CE00D06DA6 /* LivePlayerController.m */,
+			);
+			path = ViewControls;
+			sourceTree = "<group>";
+		};
+		77B177062425A78E00D06DA6 /* Decode */ = {
+			isa = PBXGroup;
+			children = (
+				77B177082425A82A00D06DA6 /* G711.h */,
+				77B177092425A82A00D06DA6 /* G711.m */,
+				77B177172425AEBE00D06DA6 /* H264Decode.h */,
+				77B177182425AEBE00D06DA6 /* H264Decode.m */,
+			);
+			path = Decode;
+			sourceTree = "<group>";
+		};
+		77B177072425A79500D06DA6 /* Encode */ = {
+			isa = PBXGroup;
+			children = (
+				77B1771A2425B02000D06DA6 /* H264HwEncode.h */,
+				77B1771B2425B02000D06DA6 /* H264HwEncode.m */,
+			);
+			path = Encode;
+			sourceTree = "<group>";
+		};
+		77B177222425C96100D06DA6 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				77B177242425C98400D06DA6 /* 协议解析.txt */,
+				77B177232425C98300D06DA6 /* 直播协议说明.txt */,
+				77B177212425C8B000D06DA6 /* ConfigMacros.h */,
+				77B177032425A66600D06DA6 /* NSString+JsonString.h */,
+				77B177042425A66600D06DA6 /* NSString+JsonString.m */,
+				77B1771D2425B2C700D06DA6 /* Packed.h */,
+				77B1771E2425B2C700D06DA6 /* Packed.c */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		77B177282426083000D06DA6 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				77B1770B2425A90A00D06DA6 /* VideoFileParser.h */,
+				77B1770C2425A90A00D06DA6 /* VideoFileParser.m */,
+				77B1770E2425AA2D00D06DA6 /* PCMDataPlayer.h */,
+				77B1770F2425AA2D00D06DA6 /* PCMDataPlayer.m */,
+				77B177112425AB3900D06DA6 /* PCMAudioQueuePlay.h */,
+				77B177122425AB3900D06DA6 /* PCMAudioQueuePlay.m */,
+				77B177142425AC2F00D06DA6 /* AAPLEAGLLayer.h */,
+				77B177152425AC2F00D06DA6 /* AAPLEAGLLayer.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		8672F6D97E53EB3E4EAE43C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE331EC621504B8417E814F7 /* Pods-H264Player.debug.xcconfig */,
+				F237D453ACE3D4399BCBE007 /* Pods-H264Player.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AD80272A3FC5F737E6CACD32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7941874B87E01A3E9E86E066 /* libPods-H264Player.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		77B176D82425A11800D06DA6 /* H264Player */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77B176F22425A12100D06DA6 /* Build configuration list for PBXNativeTarget "H264Player" */;
+			buildPhases = (
+				7DF2E32EFE280D02E678A27A /* [CP] Check Pods Manifest.lock */,
+				77B176D52425A11800D06DA6 /* Sources */,
+				77B176D62425A11800D06DA6 /* Frameworks */,
+				77B176D72425A11800D06DA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = H264Player;
+			productName = H264Player;
+			productReference = 77B176D92425A11800D06DA6 /* H264Player.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		77B176D12425A11700D06DA6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "hairong chen";
+				TargetAttributes = {
+					77B176D82425A11800D06DA6 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 77B176D42425A11700D06DA6 /* Build configuration list for PBXProject "H264Player" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 77B176D02425A11700D06DA6;
+			productRefGroup = 77B176DA2425A11800D06DA6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77B176D82425A11800D06DA6 /* H264Player */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77B176D72425A11800D06DA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77B177252425C98400D06DA6 /* 直播协议说明.txt in Resources */,
+				77B176EC2425A12100D06DA6 /* LaunchScreen.storyboard in Resources */,
+				77B176E92425A12100D06DA6 /* Assets.xcassets in Resources */,
+				77B177262425C98400D06DA6 /* 协议解析.txt in Resources */,
+				77B176E72425A11800D06DA6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7DF2E32EFE280D02E678A27A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-H264Player-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77B176D52425A11800D06DA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77B176E42425A11800D06DA6 /* ViewController.m in Sources */,
+				77B177192425AEBE00D06DA6 /* H264Decode.m in Sources */,
+				77B1771C2425B02000D06DA6 /* H264HwEncode.m in Sources */,
+				77B1771F2425B2C700D06DA6 /* Packed.c in Sources */,
+				77B177102425AA2D00D06DA6 /* PCMDataPlayer.m in Sources */,
+				77B1770A2425A82A00D06DA6 /* G711.m in Sources */,
+				77B176FE2425A4CE00D06DA6 /* LivePlayerController.m in Sources */,
+				77B177162425AC2F00D06DA6 /* AAPLEAGLLayer.m in Sources */,
+				77B177132425AB3900D06DA6 /* PCMAudioQueuePlay.m in Sources */,
+				77B177052425A66600D06DA6 /* NSString+JsonString.m in Sources */,
+				77B176DE2425A11800D06DA6 /* AppDelegate.m in Sources */,
+				77B1770D2425A90A00D06DA6 /* VideoFileParser.m in Sources */,
+				77B176EF2425A12100D06DA6 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		77B176E52425A11800D06DA6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77B176E62425A11800D06DA6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		77B176EA2425A12100D06DA6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77B176EB2425A12100D06DA6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		77B176F02425A12100D06DA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		77B176F12425A12100D06DA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		77B176F32425A12100D06DA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE331EC621504B8417E814F7 /* Pods-H264Player.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6MQB4ZQC42;
+				INFOPLIST_FILE = H264Player/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.touchtv.player;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		77B176F42425A12100D06DA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F237D453ACE3D4399BCBE007 /* Pods-H264Player.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6MQB4ZQC42;
+				INFOPLIST_FILE = H264Player/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.touchtv.player;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		77B176D42425A11700D06DA6 /* Build configuration list for PBXProject "H264Player" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77B176F02425A12100D06DA6 /* Debug */,
+				77B176F12425A12100D06DA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77B176F22425A12100D06DA6 /* Build configuration list for PBXNativeTarget "H264Player" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77B176F32425A12100D06DA6 /* Debug */,
+				77B176F42425A12100D06DA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 77B176D12425A11700D06DA6 /* Project object */;
+}

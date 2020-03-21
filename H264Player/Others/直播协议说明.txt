@@ -1,0 +1,44 @@
+直播测试要点
+1:播放过程中设备断线 很快又连接过来 ok
+2:播放过程中web断开 很快又连接过来 ok
+3:播放器并发请求同一设备同一通道直播 ok
+4:播放请求已经发给网关 网关无响应 ok
+5:播放请求已经发给网关 网关响应出错 ok
+6:网关已经响应成功，但设备长时间没有连接过来 ok
+7:正常请求，正常停止 ok
+
+
+目前DVR设备、WEB连接回收机制
+(最后接收到海康发送过来的视频数据超过了30秒)
+或者 (直播上下文建立已经超过了10秒并且没有观察者)
+
+
+
+websocket连接上来以后发送
+{'b_sn':b_sn,'ch':_ch}
+服务器返回
+{'b_sn':b_sn,'ch':_ch,'res':res ,'err':err}
+res:0 成功 其他失败
+
+unsigned short  uWidth;         //width
+unsigned short  uHeight;        //height
+unsigned int    dwTimeStamp;    //lower time stamp
+unsigned int    dwTimeStampHigh;//higher time stamp 
+unsigned int    nYear;	        //year
+unsigned int    nMonth;         //month
+unsigned int    nDay;           //day
+unsigned int    nHour;          //hour
+unsigned int    nMinute;        //minute
+unsigned int    nSecond;        //second
+unsigned int    nMillisecond;   //millisecond
+unsigned int    dwFrameNum;     //frame num
+unsigned int    dwFrameRate;    //frame rate,当帧率小于0时，0x80000002:表示1/2帧率，同理可推0x80000010为1/16帧率
+unsigned int    dwFlag;         //flag E帧标记
+unsigned int    dwFilePos;      //file pos//////////////// 1：表示3gp文件解析完成标记
+unsigned int	nPacketType;    //packet type
+unsigned int	dwPacketSize;   //packet size
+数据流,里面有可能是视频，有可能是音频
+#define VIDEO_I_FRAME		1 //video I frame
+#define VIDEO_B_FRAME		2 //video B frame
+#define VIDEO_P_FRAME		3 //video P frame
+#define AUDIO_PACKET		10 //audio packet
