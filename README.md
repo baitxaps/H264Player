@@ -1,2 +1,1 @@
-# H264Player
-H.264
+The h264 codec
