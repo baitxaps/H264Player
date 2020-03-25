@@ -101,6 +101,7 @@
 //          [self.audioPlay playWithData:pcmData];
         }else{
             data = [data subdataWithRange:NSMakeRange(sizeof(packet), packet.dwPacketSize)];
+            NSLog(@"收到vidoe数据 -- %@",data);
             [self.h264Decoder decodeData:data];
         }
     }
