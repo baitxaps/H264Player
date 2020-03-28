@@ -32,6 +32,11 @@
 @implementation LivePlayerController
 
 - (void)dealloc {
+  //  [self closeSocket];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
     [self closeSocket];
 }
 
@@ -80,9 +85,10 @@
 }
 
 // 接收服务器发送信息
+//{'b_sn':b_sn,'ch':_ch,'res':res ,'err':err}
 - (void)webSocket:(SRWebSocket *)webSocket didReceiveMessage:(id)message {
     NSData* data = (NSData*)message;
-    if (data.length == 53 || data.length == 85) {
+    if (data.length == 53 || data.length == 85 || data.length == 32) {
         
     }else{
         struct Packed packet;
